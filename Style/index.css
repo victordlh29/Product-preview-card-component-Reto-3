@@ -1,0 +1,157 @@
+:root {
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 600px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card form {
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parrafo {
+    display: flex;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parrafo p {
+    text-align: justify;
+}
+
+
+.precio h2 {
+    color: var(--Dark-cyan);
+}
+
+.precio del {
+    color: var(--Dark-grayish-blue);
+    padding-left: 10px;
+    margin: 5px;
+    display: flex;
+}
+
+.precio {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    border-color: var(--Dark-cyan);
+    background-color: var(--Dark-cyan);
+    cursor: pointer;
+    overflow: visible;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+.imagen img {
+    height: 400px;
+    width: 300px;
+    margin-bottom: -1%;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px 0px 0px 10px;
+}
+
+section {
+    width: 100%;
+    height: 969px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .card {
+        box-shadow: none;
+        height: 300px auto;
+        width: 68%;
+        border-radius: 0px 0px 10px 10px ;
+
+    }
+.card form{
+    width: 100%;
+    height: 100%;
+}
+
+
+    .imagen img {
+        height: 300px auto;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        margin-bottom: -10%;
+    }
+    button{
+        margin-top: -5%;
+        margin: 10px;
+    } 
+    .parrafo{
+        margin-top: -15px;
+    }
+    .precio{
+        margin-top: -15px;
+    }
+}
